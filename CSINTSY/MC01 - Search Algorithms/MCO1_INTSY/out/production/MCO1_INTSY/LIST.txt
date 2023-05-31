@@ -1,0 +1,35 @@
+Nodes
+    -Walls (USE ICONS IN FUTURE ACTION LISTENER CHUCHUCHCU)
+    -Goal State
+    -Heuristic
+
+Grid (UI)
+    - implement nodes
+    - nodes mouse interactions (becomes wall when clicked)
+
+AI
+    - Movement
+    - A* Implementation
+    - Other searches
+        - Uninformed: Uniform Cost Search
+        - Informed: Greedy
+ACTION LISTENERS
+
+SWITCH AI - magpapalit siya ng search method on click
+
+START - NEED PINDUTIN SI GOAL BAGO MAG START
+
+
+
+START - Display status message to press confirm [x]
+
+CONFIRM - Validation [x], window disposal [x]
+
+IMPROVE UI
+-MAKE BUTTONS LOOK PRETTY
+-START AND GOAL GRID [x]
+-WALKABLE GRID [x]
+-WALL GRID [x]
+-WALKING ON GRID [x]
+-WALKED GRID [x]
+-CHECKED GRID [x]
