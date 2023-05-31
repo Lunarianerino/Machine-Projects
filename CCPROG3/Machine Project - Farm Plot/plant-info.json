@@ -1,0 +1,186 @@
+[
+  {
+    "id": 0,
+    "name": "Empty Plot",
+    "type": "null",
+    "cost": 0,
+    "sellPrice": 0,
+    "exp": 0,
+    "harvestTime": 0,
+
+    "produceLB": 0,
+    "produceUP": 0,
+
+    "waterMin": 0,
+    "waterLimit": 0,
+
+    "fertilizerMin": 0,
+    "fertilizerLimit": 0,
+
+    "thumbnail-path": "./Seeds/"
+  },
+  {
+    "id": 1,
+    "name": "Turnip",
+    "type": "Root Crop",
+    "cost": 5,
+    "sellPrice": 6,
+    "exp": 5,
+    "harvestTime": 2,
+
+    "produceLB": 1,
+    "produceUP": 2,
+
+    "waterMin": 1,
+    "waterLimit": 2,
+
+    "fertilizerMin": 0,
+    "fertilizerLimit": 1,
+
+    "thumbnailPath": "./Seeds/turnip.png"
+  },
+
+  {
+    "id": 2,
+    "name": "Carrot",
+    "type": "Root Crop",
+    "cost": 10,
+    "sellPrice": 9,
+    "exp": 7.5,
+    "harvestTime": 3,
+
+    "produceLB": 1,
+    "produceUP": 2,
+
+    "waterMin": 1,
+    "waterLimit": 2,
+
+    "fertilizerMin": 0,
+    "fertilizerLimit": 1,
+
+    "thumbnailPath": "./Seeds/carrot.png"
+  },
+
+  {
+    "id": 3,
+    "name": "Potato",
+    "type": "Root Crop",
+    "cost": 20,
+    "sellPrice": 3,
+    "exp": 12.5,
+    "harvestTime": 5,
+
+    "produceLB": 1,
+    "produceUP": 10,
+
+    "waterMin": 3,
+    "waterLimit": 4,
+
+    "fertilizerMin": 1,
+    "fertilizerLimit": 2,
+
+    "thumbnailPath": "./Seeds/potato.png"
+  },
+
+  {
+    "id": 4,
+    "name": "Rose",
+    "type": "Flower",
+    "cost": 5,
+    "sellPrice": 5,
+    "exp": 2.5,
+    "harvestTime": 1,
+
+    "produceLB": 1,
+    "produceUP": 1,
+
+    "waterMin": 1,
+    "waterLimit": 2,
+
+    "fertilizerMin": 0,
+    "fertilizerLimit": 1,
+
+    "thumbnailPath": "./Seeds/rose.png"
+  },
+  {
+    "id": 5,
+    "name": "Turnips",
+    "type": "Flower",
+    "cost": 10,
+    "sellPrice": 9,
+    "exp": 5,
+    "harvestTime": 2,
+
+    "produceLB": 1,
+    "produceUP": 1,
+
+    "waterMin": 2,
+    "waterLimit": 3,
+
+    "fertilizerMin": 0,
+    "fertilizerLimit": 1,
+
+    "thumbnailPath": "./Seeds/turnips.png"
+  },
+  {
+    "id": 6,
+    "name": "Sunflower",
+    "type": "Flower",
+    "cost": 20,
+    "sellPrice": 19,
+    "exp": 7.5,
+    "harvestTime": 3,
+
+    "produceLB": 1,
+    "produceUP": 1,
+
+    "waterMin": 2,
+    "waterLimit": 3,
+
+    "fertilizerMin": 1,
+    "fertilizerLimit": 2,
+
+    "thumbnailPath": "./Seeds/sunflower.png"
+  },
+  {
+    "id": 7,
+    "name": "Mango",
+    "type": "Tree",
+    "cost": 100,
+    "sellPrice": 8,
+    "exp": 25,
+    "harvestTime": 10,
+
+    "produceLB": 5,
+    "produceUP": 15,
+
+    "waterMin": 7,
+    "waterLimit": 7,
+
+    "fertilizerMin": 4,
+    "fertilizerLimit": 5,
+
+    "thumbnailPath": "./Seeds/mango.png"
+  },
+  {
+    "id": 8,
+    "name": "Apple",
+    "type": "Tree",
+    "cost": 200,
+    "sellPrice": 5,
+    "exp": 25,
+    "harvestTime": 10,
+
+    "produceLB": 10,
+    "produceUP": 15,
+
+    "waterMin": 7,
+    "waterLimit": 7,
+
+    "fertilizerMin": 5,
+    "fertilizerLimit": 5,
+
+    "thumbnailPath": "./Seeds/apple.png"
+  }
+
+]
