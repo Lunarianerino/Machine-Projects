@@ -1,0 +1,154 @@
+def compute_tax (income)
+    #ruby switch cases dont fall through
+    #MAY NEED TO UPDATE CALCULATIONS IF I AM INCORRECT
+    case income
+    when 0...20833
+        return 0
+    when 20834...33332
+        return (income - 20833) * 0.2
+    when 33333...66666
+        return (income - 33333) * 0.25 + 2500
+    when 66667...166666
+        return (income - 66667) * 0.3 + 10833.33
+    when 166667...666666
+        return (income - 166667) * 0.32 + 40833.33
+    when 666667...Float::INFINITY
+        return (income - 666667) * 0.35 + 200833.33
+    else
+        return 0
+    end
+end
+
+def compute_SSS (income)
+    #ADJUST FOR 2023 TABLE IF NEEDED
+    case income
+    when 1000...3249.99
+        return 135
+    when 3250...3749.99
+        return 157.50
+    when 3750...4249.99
+        return 180
+    when 4250...4749.99
+        return 202.50
+    when 4750...5249.99
+        return 225
+    when 5250...5749.99
+        return 247.50
+    when 5750...6249.99
+        return 270
+    when 6250...6749.99
+        return 292.50
+    when 6750...7249.99
+        return 315
+    when 7250...7749.99
+        return 337.50
+    when 7750...8249.99
+        return 360
+    when 8250...8749.99
+        return 382.50
+    when 8750...9249.99
+        return 405
+    when 9250...9749.99
+        return 427.50
+    when 9750...10249.99
+        return 450
+    when 10250...10749.99
+        return 472.50
+    when 10750...11249.99
+        return 495
+    when 11250...11749.99
+        return 517.50
+    when 11750...12249.99
+        return 540
+    when 12250...12749.99
+        return 562.50
+    when 12750...13249.99
+        return 585
+    when 13250...13749.99
+        return 607.50
+    when 13750...14249.99
+        return 630
+    when 14250...14749.99
+        return 652.50
+    when 14750...15249.99
+        return 675
+    when 15250...15749.99
+        return 697.50
+    when 15750...16249.99
+        return 720
+    when 16250...16749.99
+        return 742.50
+    when 16750...17249.99
+        return 765
+    when 17250...17749.99
+        return 787.50
+    when 17750...18249.99
+        return 810
+    when 18250...18749.99
+        return 832.50
+    when 18750...19249.99
+        return 855
+    when 19250...19749.99
+        return 877.50
+    when 19750...20249.99
+        return 900
+    when 20250...20749.99
+        return 922.50
+    when 20750...21249.99
+        return 945
+    when 21250...21749.99
+        return 967.50
+    when 21750...22249.99
+        return 990
+    when 22250...22749.99
+        return 1012.50
+    when 22750...23249.99
+        return 1035
+    when 23250...23749.99
+        return 1057.50
+    when 23750...24249.99
+        return 1080
+    when 24250...24749.99
+        return 1102.50
+    when 24750...Float::INFINITY
+        return 1125
+    else
+        return 0
+    end
+end
+
+def calculate_phil_health (income)
+    #2022 calcultion
+    return (income * 0.04)/2 #divide by 2 since employer and employee share, if self employed divide by 1
+end
+def calculate_pag_ibig (income)
+    contribution = income * 0.02
+    if income <= 1500
+        return contribution
+    else
+        if contribution > 100
+            return 100
+        else
+            return contribution
+        end
+
+    end
+end
+
+
+print "Input Income: "
+income = gets.to_f
+
+puts "Your monthly income is #{income} PHP"
+puts "Tax Computations:"
+puts "Income Tax: #{compute_tax(income)} PHP"
+puts "Net Pay after Tax: #{income - compute_tax(income)} PHP"
+
+puts "Monthly Contributions:"
+puts "SSS: #{compute_SSS(income)} PHP"
+puts "PhilHealth: #{calculate_phil_health(income)} PHP"
+puts "Pag-IBIG: #{calculate_pag_ibig(income)} PHP"
+puts "Total Contributions #{compute_SSS(income) + calculate_phil_health(income) + calculate_pag_ibig(income)} PHP"
+
+puts "Total deductions: #{compute_tax(income) + compute_SSS(income) + calculate_phil_health(income) + calculate_pag_ibig(income)} PHP"
+puts "Net Pay after Deductions (2022): #{income - (compute_tax(income) + compute_SSS(income) + calculate_phil_health(income) + calculate_pag_ibig(income))} PHP" 
