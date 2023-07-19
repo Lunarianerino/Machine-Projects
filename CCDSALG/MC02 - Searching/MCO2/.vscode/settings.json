@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "stdio.h": "c",
+        "hashtables.h": "c",
+        "string.h": "c",
+        "funcs.h": "c",
+        "crc32.h": "c"
+    }
+}
