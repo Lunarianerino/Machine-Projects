@@ -1300,6 +1300,38 @@
                 "y": 190
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "c3342667-b5dd-4205-a413-ea59a76036c2",
+            "source": {
+              "x": 960,
+              "y": -30
+            },
+            "target": {
+              "x": 960,
+              "y": 500
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": 220
+              }
+            ]
           }
         ]
       }
